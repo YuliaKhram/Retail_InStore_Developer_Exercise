@@ -20,7 +20,7 @@ function App() {
   // activeCity != 0 ? console.log(timezones[activeCity.slice(0, 3)]) : null;
 
   let date, time;
-  if (activeCity != 0) {
+  if (activeCity !== 0) {
     let tz = activeCity.slice(0, 3).toLowerCase();
     console.log(timezones[tz]);
     let options = {
@@ -41,20 +41,20 @@ function App() {
 
   return (
     <div className="App">
-      <div className="cities">
+      <ul className="cities">
         {Cities.map((city, section) => (
-          <p
+          <li
             key={section}
             onClick={handleClick}
             className={activeCity === city.label ? "active" : ""}
           >
             {city.label}
-          </p>
+          </li>
         ))}
-      </div>
+      </ul>
 
       <hr />
-      {activeCity != 0 && (
+      {activeCity !== 0 && (
         <div className="time">
           It's {time} in {activeCity}
         </div>

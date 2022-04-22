@@ -1,34 +1,155 @@
 .cities {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* text-align: center; */
+  -webkit-transition: width 0.3s, right 0.3s;
+  -moz-transition: width 0.3s, right 0.3s;
+  -o-transition: width 0.3s, right 0.3s;
+  transition: width 0.3s, right 0.3s;
 }
 
-p {
-  font-size: larger;
+ul {
+  position: relative;
+  width: 35em;
+  height: 2em;
+  margin: 100px auto 19px auto;
+  padding: 0;
+  white-space: nowrap;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+  /* font-size: larger;
   margin-top: 40px;
   margin-bottom: 5px;
   color: #a2a6a3;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 25em;
+  bottom: 0;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.4em 0.2em;
+  color: #a2a6a3;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+
+  /*transition*/
+  -webkit-transition: width 0.3s, right 0.3s;
+  -moz-transition: width 0.3s, right 0.3s;
+  -o-transition: width 0.3s, right 0.3s;
+  transition: width 0.3s, right 0.3s;
+}
+
+ul li:nth-child(1) {
+  width: 5em;
+}
+ul li:nth-child(2) {
+  width: 7em;
+}
+ul li:nth-child(3) {
+  width: 4em;
+}
+ul li:nth-child(4) {
+  width: 5em;
+}
+ul li:nth-child(5) {
+  width: 4em;
+}
+ul li:nth-child(6) {
+  width: 6em;
+}
+ul li:nth-child(7) {
+  width: 4em;
+}
+
+ul li:last-child:after {
+  content: "";
+  position: absolute;
+  right: inherit;
+  bottom: -3px;
+  width: inherit;
+  height: 3px;
+  background: #ccc;
+  pointer-events: none;
+  /*transition*/
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+ul li:nth-child(1) ~ li:last-child {
+  right: 30em;
+  width: 5em;
+}
+
+ul li:nth-child(2):hover ~ li:last-child {
+  right: 23em;
+  width: 7em;
+}
+
+ul li:nth-child(3):hover ~ li:last-child {
+  right: 19em;
+  width: 4em;
+}
+
+ul li:nth-child(4):hover ~ li:last-child {
+  right: 14em;
+  width: 5em;
+}
+
+ul li:nth-child(5):hover ~ li:last-child {
+  right: 10rem;
+  width: 4em;
+}
+ul li:nth-child(6):hover ~ li:last-child {
+  right: 4rem;
+  width: 6em;
+}
+ul li:nth-child(7):last-child:hover {
+  right: 0;
+  width: 4em;
+}
+
+ul li:hover ~ li:last-child:after,
+ul li:last-child:hover:after {
+  background: black;
+}
+
+ul li:last-child {
+  min-width: 4em;
+  max-width: 4em;
+}
+
+ul li:hover {
+  color: #0da6d6;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid black;
+
+  /*transition*/
+  -webkit-transition: width 0.3s, right 0.3s, background-color 0.3s;
+  -moz-transition: width 0.3s, right 0.3s, background-color 0.3s;
+  -o-transition: width 0.3s, right 0.3s, background-color 0.3s;
+  transition: width 0.3s, right 0.3s, background-color 0.3s;
 }
 
 hr {
   height: 1px;
-  color: lightgray;
-  background-color: #a2a6a3;
-  margin-top: -2px;
+  color: #c7c8c8;
+  background-color: #c7c8c8;
+  margin-top: -20px;
 }
 
-p:hover {
-  color: #0da6d6;
-  cursor: pointer;
-}
-
-.active {
+.active,
+ul li:focus {
+  color: black;
   border-bottom: 2px solid black;
-  padding-bottom: 8px;
-  margin-bottom: 0;
-  transition: transform 1s;
 }
 
 .time {
