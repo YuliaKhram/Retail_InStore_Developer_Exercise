@@ -1,8 +1,8 @@
 .cities {
-  -webkit-transition: width 0.03s, right 0.3s;
-  -moz-transition: width 0.03s, right 0.3s;
-  -o-transition: width 0.03s, right 0.3s;
-  transition: width 0.03s, right 0.3s;
+  -webkit-transition: width 0.02s, right 0.01s;
+  -moz-transition: width 0.02s, right 0.01s;
+  -o-transition: width 0.02s, right 0.01s;
+  transition: width 0.02s, right 0.01s;
 }
 
 ul {
@@ -31,10 +31,10 @@ ul li {
   text-shadow: 0 1px 0 white;
 
   /*transition*/
-  -webkit-transition: width 0.3s, right 0.3s;
-  -moz-transition: width 0.3s, right 0.3s;
-  -o-transition: width 0.3s, right 0.3s;
-  transition: width 0.3s, right 0.3s;
+  -webkit-transition: width 0.03s, right 0.03s;
+  -moz-transition: width 0.03s, right 0.03s;
+  -o-transition: width 0.03s, right 0.03s;
+  transition: width 0.03s, right 0.03s;
 }
 
 ul li:nth-child(1) {
@@ -118,17 +118,16 @@ ul li:last-child {
   max-width: 4em;
 }
 
-ul li:hover {
+li:hover {
   color: #0da6d6;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid black;
 
   /*transition*/
-  -webkit-transition: width 0.3s, right 0.3s, background-color 0.3s;
-  -moz-transition: width 0.3s, right 0.3s, background-color 0.3s;
-  -o-transition: width 0.3s, right 0.3s, background-color 0.3s;
-  transition: width 0.3s, right 0.3s, background-color 0.3s;
+  -webkit-transition: width 0.03s, right 0.03s, background-color 0.3s;
+  -moz-transition: width 0.03s, right 0.03s, background-color 0.3s;
+  -o-transition: width 0.03s, right 0.03s, background-color 0.3s;
+  transition: width 0.03s, right 0.03s, background-color 0.3s;
 }
 
 hr {
