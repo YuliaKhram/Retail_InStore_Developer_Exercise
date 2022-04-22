@@ -17,7 +17,6 @@ function App() {
     hon: "Hongkong",
     syd: "Australia/Sydney",
   };
-  // activeCity != 0 ? console.log(timezones[activeCity.slice(0, 3)]) : null;
 
   let date, time;
   if (activeCity !== 0) {
